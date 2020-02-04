@@ -1,0 +1,10 @@
+wired-card {
+    min-width: 99%;
+    min-height: 95%;
+}
+
+.footer {
+    flex: .1;
+    margin-top: .5%;
+    bottom: 0
+}
