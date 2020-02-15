@@ -44,3 +44,36 @@ html, body {
     transform: rotate(360deg);
   }
 }
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.align-left {
+  display: flex;
+  justify-content: start;
+  text-align: start;
+}
+
+.align-right {
+  display: flex;
+  justify-content: end;
+  text-align: end;
+}
+
+.align-middle {
+  display: flex;
+  align-items: center;
+}
+
+.align-top {
+  display: flex;
+  align-items: start;
+}
+
+.align-bottom {
+  display: flex;
+  align-items: end;
+}
