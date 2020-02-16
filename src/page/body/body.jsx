@@ -1,21 +1,17 @@
 import React from 'react';
 import "./body.css"
+import {random} from "txtgen/src/util";
 
 const Body = (props) => {
-    const getRandomWithMargin = () => {
-        return Math.random() * 8 + "%"
-    };
-    const getRandomHeightMargin = () => {
-        return Math.random() + "%"
-    };
     return (
         <div
             className={"body"}
             style={{
-                marginLeft: getRandomWithMargin(),
-                marginRight: getRandomWithMargin(),
-                marginTop: getRandomHeightMargin(),
-                marginBottom: getRandomHeightMargin()
+                ...props.style,
+                ...{
+                    gridColumnGap: random(1, 10) + 'px',
+                    gridRowGap: random(1, 10) + 'px',
+                }
             }}
         >
             {props.children}

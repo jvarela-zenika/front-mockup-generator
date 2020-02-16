@@ -1,17 +1,18 @@
 import React from 'react';
 import "./footer.css"
-import { WiredButton, WiredInput } from "wired-elements"
+import {WiredButton, WiredInput} from "wired-elements"
 
 const Footer = (props) => {
     const getHeight = () => {
-        return .05+Math.random()/7
+        return .05 + Math.random() / 7
+    };
+
+    const getBorderClass = () => {
+        return "box" + (Math.floor(Math.random() * 5) + 1)
     };
 
     return (
-        <div className={"footer"} style={{flex: getHeight()}}>
-            <wired-card>
-                Footer
-            </wired-card>
+        <div className={"footer " + getBorderClass()} style={{flex: getHeight()}}>
         </div>
     )
 };

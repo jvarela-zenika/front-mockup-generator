@@ -18,11 +18,11 @@ const Image = (props) => {
     };
 
     const getBorderClass = () => {
-        return "box"+(Math.floor(Math.random()*4)+1)
+        return "box"+(Math.floor(Math.random()*5)+1)
     };
 
     return (
-        <img className={"box3"} src={getImage()} alt={'no-image'} />
+        <img className={getBorderClass()} src={getImage()} alt={'no-image'} />
     )
 };
 

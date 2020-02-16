@@ -5,7 +5,6 @@ const PositionProvider = (props) => {
 
     const getPositionClasses = () => {
         let output = '';
-
         if (props.position.x > 0) {
             output += 'align-right '
         } else {
@@ -36,16 +35,10 @@ const PositionProvider = (props) => {
     return (
         <>
             {
-                React.cloneElement(
-                    props.children,
-                    React.cloneElement(
-                        props,
-                        {
-                            className: getPositionClasses(),
-                            style: getPositionPerturbations()
-                        }
-                    )
-                )
+                React.cloneElement(props.children, {
+                    style: getPositionPerturbations(),
+                    className: getPositionClasses()
+                })
             }
         </>
     )

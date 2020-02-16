@@ -11,7 +11,6 @@ const Page = (props) => {
     };
 
 
-
     return (
         <div
             className={"page"}
@@ -20,7 +19,7 @@ const Page = (props) => {
                 paddingRight: getRandomWithMargin(),
             }}
         >
-                {props.children}
+            {props.children}
         </div>
     )
 };

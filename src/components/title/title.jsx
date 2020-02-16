@@ -5,12 +5,6 @@ import FontProvider from "../fontProvider";
 
 const Title = (props) => {
 
-    // const fonts = [];
-    //
-    // const getFont = () => {
-    //     if (Math.random() )
-    // };
-
     const textgen = require('txtgen');
 
     const getTitle = () => {
@@ -33,11 +27,10 @@ const Title = (props) => {
         <FontProvider>
             <div
                 style={{
-                    ...props.style,
                     fontWeight: "bold",
-                    fontSize: ((4-props.h)/2+ Math.random()) + 'em'
+                    fontSize: ((4-props.h)*45 + Math.random()*10) + '%'
                 }}
-                 className={props.className+' '+props.className}
+                 className={props.className}
             >
                 {getTitle()}
             </div>

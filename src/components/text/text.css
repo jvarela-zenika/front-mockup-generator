@@ -1,0 +1,4 @@
+p {
+    text-overflow: clip;
+    overflow: hidden;
+}

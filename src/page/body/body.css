@@ -1,11 +1,7 @@
 .body {
-    flex: 1;
     display: grid;
     margin: 0 5% 0 5%;
     /*grid-template-rows: repeat(8, 12.5%);*/
     grid-template-columns: repeat(6, 16.5%);
-    justify-items: stretch;
-    align-items: stretch;
-    justify-content: stretch;
-    align-content: stretch;
+    max-height: 80%;
 }

@@ -1,9 +1,5 @@
-wired-card {
-    min-width: 99%;
-    min-height: 95%;
-}
-
 .footer {
-    margin-top: .5%;
+    min-width: 99%;
+    border-top: solid;
     bottom: 0
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import "./fontProvider.css"
+import moment from 'moment';
 
 const FontProvider = (props) => {
 
@@ -15,6 +16,10 @@ const FontProvider = (props) => {
         'Zeyada'
     ];
 
+    const getFontIndex = () => {
+        return moment().format('ss') % fonts.length
+    };
+
     const getChildren = () => {
 
         if (!props.children) {
@@ -24,11 +29,10 @@ const FontProvider = (props) => {
         return React.cloneElement(
             props.children, {
                 ...props, style: {
-                    fontFamily: fonts[Math.floor(Math.random() * fonts.length)],
+                    fontFamily: fonts[getFontIndex()],
                 }
             }
         )
-
     };
 
     return (

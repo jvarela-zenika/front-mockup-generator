@@ -1,8 +1,7 @@
-wired-card {
-    min-width: 96%;
-    min-height: 95%;
-}
-
 .header {
+    display: grid;
+    min-width: 96%;
     margin-bottom: .5%;
+    border: 2px solid;
+    grid-template-columns: repeat(6, 16.5%);
 }

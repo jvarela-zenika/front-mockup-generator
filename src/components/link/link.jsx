@@ -2,6 +2,7 @@ import React from 'react';
 import "./link.css"
 import {WiredLink} from "wired-link"
 import FontProvider from "../fontProvider/fontProvider.component";
+import {random} from "txtgen/src/util";
 
 const Link = (props) => {
 
@@ -29,9 +30,11 @@ const Link = (props) => {
         <FontProvider>
             <div
                 style={{
-                    ...props.style,
-                    fontSize: (1.2 + Math.random()) + 'em'
+                    fontSize: (1.2 + Math.random()) + 'em',
+                    marginLeft: random(2, 10)+'px',
+                    marginRight: random(2, 10)+'px'
                 }}
+                className={'link '+props.className}
             >
                 <wired-link href={'#'}>
                     {getText()}

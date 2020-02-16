@@ -11,7 +11,7 @@ const Text = (props) => {
             <p
                 style={{
                     ...props.style,
-                    fontSize: (1.2 + Math.random()) + 'em'
+                    fontSize: (1.2 + Math.random()/2) + 'em'
                 }}
                 className={props.className}
             >

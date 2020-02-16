@@ -3,30 +3,3 @@ img {
     max-height: 94%;
     border: 2px solid;
 }
-
-.box1 {
-    border-width: 3px 4px 3px 5px;
-    border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
-}
-
-.box2 {
-    width: 350px;
-    border-width: 3px 3px 5px 5px;
-    border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
-    border-radius: 10% 50% 5% 20%/50% 1% 50% 2%;
-}
-
-.box3 {
-    border-width: 5px 3px 3px 5px;
-    border-radius: 50% 1% 50% 2%/10% 50% 5% 20%;
-}
-
-.box4 {
-    border-width: 3px 5px 3px 5px;
-    border-radius: 15px 225px 15px 255px/255px 15px 225px 15px;
-}
-
-.box5 {
-    border-width: 5px 3px 3px 5px;
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-}
