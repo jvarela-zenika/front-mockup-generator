@@ -33,8 +33,8 @@ function App() {
     return (
         <Page>
             <Header>
-                <Node size={{col: 1}} >
-                    <Logo />
+                <Node size={{col: 1}}>
+                    <Logo/>
                 </Node>
                 <Node size={{col: 5}} className={getPositionClasses(1, 0)}>
                     <Link/>
@@ -43,30 +43,31 @@ function App() {
                 </Node>
             </Header>
             <Body>
-                <Node size={{col: 6, row: 1}} className={getPositionClasses(0, 0)}>
+                <Node size={{row: 1, col: 6}} className={getPositionClasses(0, 0)}>
                     <Title h={1}/>
                 </Node>
-                <Node size={{col: 1, row: 2}}/>
-                <Node size={{col: 2, row: 2}}>
+                <Node size={{row: 2, col: 1}}/>
+                <Node size={{row: 2, col: 2}}>
                     <Image/>
                 </Node>
-                <Node size={{col: 2, row: 1}}>
+                <Node size={{row: 1, col: 2}}>
                     <Title h={2}/>
                     <Text/>
                 </Node>
-                <Node size={{col: 2, row: 1}} className={getPositionClasses(1,1)}>
-                    <Button />
+                <Node size={{row: 1, col: 2}} className={getPositionClasses(1, 1)}>
+                    <Button/>
                 </Node>
-                <Node size={{col: 1, row: 2}}/>
-                <Node size={{col: 1, row: 2}}/>
-                <Node size={{col: 4, row: 1}}>
+                <Node size={{row: 2, col: 1}}/>
+                <Node size={{row: 2, col: 1}}/>
+                <Node size={{row: 1, col: 4}}>
                     <Title h={2}/>
                     <Text/>
                 </Node>
-                <Node size={{col: 4, row: 1}}>
+                <Node size={{row: 1, col: 4}}>
                     <Link textWordsCount={4}/>
                 </Node>
-                <Node size={{col: 1, row: 1}}/>
+                <Node size={{row: 1, col: 1}}/>
+                <Node size={{row: 1, col: 6}}/>
             </Body>
             <Footer/>
         </Page>
