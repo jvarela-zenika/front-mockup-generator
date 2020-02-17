@@ -10,6 +10,7 @@ import Text from "./components/text";
 import Link from "./components/link";
 import Image from "./components/image";
 import Logo from "./components/logo";
+import Button from "./components/button";
 
 function App() {
 
@@ -58,6 +59,7 @@ function App() {
                 <Node size={{col: 4, row: 1}}>
                     <Title h={2}/>
                     <Text/>
+                    <Button className={getPositionClasses(1,0)}/>
                 </Node>
                 <Node size={{col: 1, row: 2}}/>
                 <Node size={{col: 4, row: 1}}>

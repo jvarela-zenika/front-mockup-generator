@@ -1,1 +1,27 @@
+.button {
+    display: flex;
+}
 
+.button.align-center {
+    justify-content: center;
+}
+
+.button.align-left {
+    justify-content: flex-start;
+}
+
+.button.align-right {
+    justify-content: flex-end;
+}
+
+.button.align-middle {
+    align-items: center;
+}
+
+.button.align-top {
+    align-items: flex-start;
+}
+
+.button.align-bottom {
+    align-items: flex-end;
+}

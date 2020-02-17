@@ -1,19 +1,27 @@
 import React from 'react';
 import "./button.css"
-import { WiredButton, WiredInput } from "wired-elements"
+import {WiredButton} from "wired-elements"
 
 const Button = (props) => {
 
-    const style = {
-        gridColumn: 'auto / span ' + props.col,
-        gridRow: 'auto / span ' + props.row,
-    };
+    const textgen = require('txtgen');
+
+    const getText = () => {
+        let splitedText = textgen.sentence().split(' ');
+        return splitedText.splice(
+            0,
+            Math.floor(2 + Math.random() * 2)
+        )
+            .join(' ');
+    }
 
     return (
-        <div style={style} className={"node"}>
-            <wired-card>
-                Test
-            </wired-card>
+        <div
+            className={"button" + (props.className ? ' ' + props.className : '')}
+        >
+            <wired-button>
+                {getText()}
+            </wired-button>
         </div>
     )
 };
