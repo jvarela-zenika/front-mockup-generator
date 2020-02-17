@@ -5,3 +5,8 @@
     border: 2px solid;
     grid-template-columns: repeat(6, 16.5%);
 }
+
+.header .node {
+    flex-direction: initial !important;
+    margin-top: 0 !important;
+}

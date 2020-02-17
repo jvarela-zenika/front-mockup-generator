@@ -1,7 +1,6 @@
 import React from 'react';
 import "./title.css"
 import {WiredButton, WiredInput} from "wired-elements"
-import FontProvider from "../fontProvider";
 
 const Title = (props) => {
 
@@ -11,30 +10,31 @@ const Title = (props) => {
         let output = "";
         switch (props.h) {
             case 1:
-                output = <h1>{textgen.sentence()}</h1>;
+                output = <h1>{getTitleText()}</h1>;
                 break;
             case 2:
-                output = <h2>{textgen.sentence()}</h2>;
+                output = <h2>{getTitleText()}</h2>;
                 break;
             default:
-                output = <h3>{textgen.sentence()}</h3>;
+                output = <h3>{getTitleText()}</h3>;
                 break;
         }
         return output;
     };
 
+    const getTitleText = () => {
+        let splitedText = textgen.sentence().split(' ');
+        return splitedText.splice(
+            0,
+            Math.floor(2 + Math.random() * 5)
+        )
+            .join(' ');
+    }
+
     return (
-        <FontProvider>
-            <div
-                style={{
-                    fontWeight: "bold",
-                    fontSize: ((4-props.h)*45 + Math.random()*10) + '%'
-                }}
-                 className={props.className}
-            >
-                {getTitle()}
-            </div>
-        </FontProvider>
+        <>
+            {getTitle()}
+        </>
     )
 };
 

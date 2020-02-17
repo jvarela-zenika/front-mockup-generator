@@ -1,16 +1,15 @@
 import React from 'react';
 import "./node.css"
-import {WiredButton, WiredInput} from "wired-elements"
 
 const Node = (props) => {
 
     const getStyle = () => {
-        let randWidth = Math.floor(Math.random() * 3);
+        let randWidth = Math.floor(Math.random(1,3) * 3);
         let randHeight = Math.floor(Math.random() * 3);
 
         return {
-            gridColumn: 'auto / span ' + (props.col ? props.col : 1),
-            gridRow: 'auto / span ' + (props.row ? props.row : 1),
+            gridColumn: 'auto / span ' + (props.size.col ? props.size.col : 1),
+            gridRow: 'auto / span ' + (props.size.row ? props.size.row : 1),
             marginLeft: randWidth + '%',
             marginTop: randHeight + '%',
             maxWidth: 100 - randWidth + '%',
@@ -23,7 +22,7 @@ const Node = (props) => {
     return (
         <div
             style={getStyle()}
-            className={"node"}
+            className={"node" + (props.className ? ' '+props.className : '')}
         >
             {props.children}
         </div>

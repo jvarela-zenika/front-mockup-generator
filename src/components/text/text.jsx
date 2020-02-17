@@ -1,23 +1,25 @@
 import React from 'react';
 import "./text.css"
-import FontProvider from "../fontProvider/fontProvider.component";
 
 const Text = (props) => {
 
     const textgen = require('txtgen');
 
+    const getText = () => {
+        let paragraphArray = textgen.paragraph().split(' ');
+        return paragraphArray.splice(
+            0,
+            paragraphArray.length/3
+        ).join(' ')
+    }
+
     return (
-        <FontProvider>
-            <p
-                style={{
-                    ...props.style,
-                    fontSize: (1.2 + Math.random()/2) + 'em'
-                }}
-                className={props.className}
-            >
-                {textgen.paragraph()}
-            </p>
-        </FontProvider>
+        <p
+            style={props.style}
+            className={props.className}
+        >
+            {getText()}
+        </p>
     )
 };
 

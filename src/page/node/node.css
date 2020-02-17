@@ -1,4 +1,30 @@
 .node {
+    display: flex;
+    flex-direction: column;
     text-overflow: clip;
     overflow: hidden;
+}
+
+.node.align-center {
+    justify-content: center;
+}
+
+.node.align-left {
+    justify-content: flex-start;
+}
+
+.node.align-right {
+    justify-content: flex-end;
+}
+
+.node.align-middle {
+    align-items: center;
+}
+
+.node.align-top {
+    align-items: flex-start;
+}
+
+.node.align-bottom {
+    align-items: flex-end;
 }
