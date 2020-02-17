@@ -63,7 +63,6 @@ function App() {
                     <Title h={2}/>
                     <Text/>
                 </Node>
-                <Node size={{col: 1, row: 2}}/>
                 <Node size={{col: 4, row: 1}}>
                     <Link textWordsCount={4}/>
                 </Node>
