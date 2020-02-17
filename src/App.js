@@ -50,16 +50,18 @@ function App() {
                 <Node size={{col: 2, row: 2}}>
                     <Image/>
                 </Node>
-                <Node size={{col: 2, row: 2}}>
+                <Node size={{col: 2, row: 1}}>
                     <Title h={2}/>
                     <Text/>
+                </Node>
+                <Node size={{col: 2, row: 1}} className={getPositionClasses(1,1)}>
+                    <Button />
                 </Node>
                 <Node size={{col: 1, row: 2}}/>
                 <Node size={{col: 1, row: 2}}/>
                 <Node size={{col: 4, row: 1}}>
                     <Title h={2}/>
                     <Text/>
-                    <Button className={getPositionClasses(1,0)}/>
                 </Node>
                 <Node size={{col: 1, row: 2}}/>
                 <Node size={{col: 4, row: 1}}>
