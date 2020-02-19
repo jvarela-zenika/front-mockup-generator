@@ -1,5 +1,5 @@
 img {
-    min-width: 99%;
-    max-height: 94%;
     border: 2px solid;
+    height: 100%;
+    width: 100%;
 }
