@@ -13,7 +13,7 @@ const Button = (props) => {
             Math.floor(2 + Math.random() * 2)
         )
             .join(' ');
-    }
+    };
 
     return (
         <div

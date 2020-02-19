@@ -1,6 +1,5 @@
 import React from 'react';
 import "./title.css"
-import {WiredButton, WiredInput} from "wired-elements"
 
 const Title = (props) => {
 

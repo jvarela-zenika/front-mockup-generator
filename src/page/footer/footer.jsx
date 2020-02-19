@@ -1,6 +1,5 @@
 import React from 'react';
 import "./footer.css"
-import {WiredButton, WiredInput} from "wired-elements"
 
 const Footer = (props) => {
     const getHeight = () => {

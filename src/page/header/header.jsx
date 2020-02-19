@@ -1,6 +1,5 @@
 import React from 'react';
 import "./header.css"
-import { WiredButton, WiredInput } from "wired-elements"
 import {random} from "txtgen/src/util";
 
 const Header = (props) => {

@@ -6,9 +6,6 @@ const Page = (props) => {
     const getRandomWithMargin = () => {
         return Math.random() * 5 + "%"
     };
-    const getRandomHeightMargin = () => {
-        return Math.random() * 5 + "%"
-    };
 
     const fonts = [
         {

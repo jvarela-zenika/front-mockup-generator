@@ -1,6 +1,5 @@
 import React from 'react';
 import "./image.css"
-import {WiredImage} from "wired-image"
 
 const Image = (props) => {
 
@@ -22,7 +21,7 @@ const Image = (props) => {
     };
 
     return (
-        <img className={getBorderClass()} src={getImage()} alt={'no-image'} />
+        <img className={getBorderClass()} src={getImage()} alt={"i'm a missing image"} />
     )
 };
 
